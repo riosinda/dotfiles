@@ -159,8 +159,11 @@ y reloj en gris.
 La línea con `❯` es donde escribes. El contenido puede ocupar más espacio cuando
 el panel es estrecho; no se fuerza una fila separada para Git. Los iconos usan
 JetBrainsMono Nerd Font Mono, que el instalador incluye para las próximas Macs.
-Solo se personalizan los colores del preset; Python y Conda no se muestran
-en esta distribución.
+Además de los colores, se añade Python: aparece en carpetas con archivos `.py`,
+notebooks `.ipynb`, `pyproject.toml`, `requirements.txt` u otros marcadores Python,
+o cuando hay un entorno virtual activo. Muestra la versión del intérprete de
+la terminal y, si activaste un venv, su nombre entre paréntesis: `v3.12.8 (.venv)`.
+El nombre no aparece por el mero hecho de existir una carpeta `.venv`.
 
 ### Sugerencias mientras escribes
 
@@ -562,9 +565,10 @@ python -c "import sys; print(sys.executable)"
 ```
 
 Activarlo en un panel no lo activa en los demás. Si usas Conda, selecciona tu
-entorno con su comando habitual. Para confirmar qué Python estás usando,
-ejecuta `which python`; el preset Tokyo Night original no muestra ese entorno.
-El kernel de VS Code se selecciona aparte.
+entorno con su comando habitual. El bloque Python refleja el intérprete de esa
+terminal; puedes comprobarlo con `which python`. `uv run` selecciona el entorno
+para ese comando, pero no lo activa en el shell: usa `source .venv/bin/activate`
+si quieres que el prompt refleje ese venv. El kernel de VS Code se selecciona aparte.
 
 En un proyecto que contenga `train.py` y sus dependencias instaladas:
 

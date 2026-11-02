@@ -11,6 +11,7 @@ $git_branch\
 $git_status\
 [](fg:#181818 bg:#101010)\
 $nodejs\
+$python\
 $bun\
 $rust\
 $golang\
@@ -54,6 +55,12 @@ format = '[[($all )](fg:#c3e88d bg:#181818)]($style)'
 symbol = ""
 style = "bg:#101010"
 format = '[[ $symbol ($version) ](fg:#c3e88d bg:#101010)]($style)'
+
+[python]
+symbol = " "
+style = "fg:#c3e88d bg:#101010"
+format = '[ $symbol($version)( \($virtualenv\)) ]($style)'
+# Detección estándar: .py, .ipynb, pyproject.toml, requirements.txt o venv activo.
 
 [bun]
 symbol = ""
