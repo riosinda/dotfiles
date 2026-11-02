@@ -153,6 +153,34 @@ de una sesión y terminar sus procesos.
 
 ## Cómo leer y escribir comandos
 
+### Sugerencias mientras escribes
+
+Abre una terminal nueva para cargar esta configuración. Si ya estás en un panel
+de tmux, ejecuta `exec zsh` cuando estés en el prompt para recargar ese panel.
+
+- **Texto gris:** es una sugerencia. Pulsa **flecha derecha** con el cursor al
+  final del texto para aceptarla. **Enter** ejecuta el comando.
+- **Tab:** completa comandos, opciones y rutas. En el frontend, escribe
+  `npm run ` y pulsa Tab para ver los scripts de su `package.json`; por ejemplo,
+  `npm run d` + Tab completa `dev` si es la única coincidencia.
+- **uv:** `uv r` + Tab completa el subcomando; las opciones y rutas se completan
+  según lo que soporte uv. Tras ejecutar `uv run python train.py`, podrás recuperar
+  esa línea escribiendo su comienzo, si ese archivo existe en tu proyecto.
+- **Ctrl-r:** sigue buscando en tu historial general con fzf; Escape cancela.
+
+Las sugerencias recuerdan primero lo que ejecutaste **en esa carpeta exacta**.
+Por ejemplo, después de usar `npm run dev` en frontend y `npm run build` en otra
+carpeta, escribir `npm run ` prioriza el comando propio de cada carpeta.
+Si aún no hay historial local que coincida, se busca en el historial general y
+en los completados. No se ejecutan comandos al mostrar o aceptar sugerencias.
+
+Atuin empieza a aprender la ubicación de los comandos desde esta configuración;
+el historial antiguo de zsh no contiene esa información. El historial nuevo se
+guarda localmente fuera de Git, sin cuenta ni sincronización. Funciona dentro y
+fuera de tmux. Las herramientas npm/uv deben estar instaladas para sus completados.
+
+### Teclas y rutas básicas
+
 | Elemento | Significa |
 | --- | --- |
 | `~` | Tu carpeta de usuario |

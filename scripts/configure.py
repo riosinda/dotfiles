@@ -12,6 +12,7 @@ import subprocess
 MANAGED = [
     ".config/ghostty/config", ".config/starship.toml",
     ".config/zsh/dotfiles.zsh", ".config/git/dotfiles.gitconfig",
+    ".config/zsh/completion.zsh", ".config/atuin/config.toml",
     "Library/Application Support/lazygit/config.yml", ".tmux.conf",
 ]
 LOCAL = [".zshrc", ".gitconfig", ".config/git/personal.gitconfig",

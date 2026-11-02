@@ -1,0 +1,14 @@
+# Historial local con contexto de carpeta. No requiere cuenta ni sincronización.
+auto_sync = false
+update_check = false
+filter_mode = "directory"
+workspaces = false
+secrets_filter = true
+history_filter = ["^ "]
+enter_accept = false
+
+[daemon]
+enabled = false
+
+[ai]
+enabled = false

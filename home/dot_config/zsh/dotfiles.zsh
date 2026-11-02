@@ -8,6 +8,8 @@ elif [[ -x /usr/local/bin/brew && ":$PATH:" != *:/usr/local/bin:* ]]; then
 fi
 typeset -U path
 
+[[ -r "$HOME/.config/zsh/completion.zsh" ]] && source "$HOME/.config/zsh/completion.zsh"
+
 if (( $+commands[fzf] )); then
   export FZF_DEFAULT_OPTS='--height=40% --layout=reverse --border'
   if (( $+commands[fd] )); then

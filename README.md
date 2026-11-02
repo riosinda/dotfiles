@@ -38,6 +38,7 @@ configuración. Si una opción de ventana no cambia, abre una ventana nueva.
 | --- | --- |
 | Ghostty | Mellifluous, Menlo 14, márgenes, controles de macOS y terminal rápida |
 | zsh | Conserva Oh My Zsh y tus rutas; sustituye el prompt anterior por Starship |
+| Autocompletado | Sugerencias en gris, historial local por carpeta con Atuin y Tab para npm/uv/uvx |
 | Starship | Carpeta, rama/estado Git, Python/Conda, duración y host por SSH |
 | fzf | Búsqueda de historial, archivos y carpetas |
 | zoxide | Navegación con `z` y selección con `zi` |
@@ -58,6 +59,8 @@ Para nuevos equipos, no instala Oh My Zsh ni Powerlevel10k; zsh funciona sin ell
 | Saltar a una carpeta visitada | `z parte-del-nombre` |
 | Elegir carpeta visitada | `zi` |
 | Buscar historial | `Ctrl-r` |
+| Aceptar la sugerencia en gris | Flecha derecha al final del comando |
+| Completar scripts del proyecto | `npm run ` + Tab |
 | Buscar archivos e insertar su ruta | `Ctrl-t` |
 | Buscar carpeta y entrar | `Option izquierdo+c` |
 | Revisar Git | `lg` |
@@ -68,6 +71,13 @@ Para nuevos equipos, no instala Oh My Zsh ni Powerlevel10k; zsh funciona sin ell
 
 Se conserva Option derecho para caracteres del teclado español. No se fuerza
 Shift+Enter: cada agente mantiene su manejo de entrada multilínea.
+
+Las sugerencias priorizan comandos ejecutados en la carpeta actual; después
+consultan el historial general de zsh y el autocompletado. Atuin aprende la
+carpeta de los comandos nuevos desde que abres una terminal con esta configuración.
+Su historial queda local, fuera del repositorio, con sincronización e IA desactivadas.
+Los completados de npm, uv y uvx se activan cuando esas herramientas están instaladas;
+el instalador no cambia tus versiones de Node ni de Python.
 
 ## tmux
 
