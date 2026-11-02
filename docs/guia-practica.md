@@ -153,13 +153,14 @@ de una sesión y terminar sus procesos.
 
 ## Cómo leer y escribir comandos
 
-El prompt usa el [preset Tokyo Night original de Starship](https://starship.rs/presets/tokyo-night):
-segmentos azules unidos para carpeta, Git, runtimes compatibles y reloj.
+El prompt usa la distribución del [preset Tokyo Night de Starship](https://starship.rs/presets/tokyo-night)
+con segmentos oscuros unidos, Git y runtimes en verde claro, carpeta en blanco/lila
+y reloj en gris.
 La línea con `❯` es donde escribes. El contenido puede ocupar más espacio cuando
 el panel es estrecho; no se fuerza una fila separada para Git. Los iconos usan
 JetBrainsMono Nerd Font Mono, que el instalador incluye para las próximas Macs.
-Se conserva el preset sin personalizaciones; Python y Conda no se muestran
-en este diseño original.
+Solo se personalizan los colores del preset; Python y Conda no se muestran
+en esta distribución.
 
 ### Sugerencias mientras escribes
 

@@ -39,7 +39,7 @@ configuración. Si una opción de ventana no cambia, abre una ventana nueva.
 | Ghostty | Mellifluous, JetBrainsMono Nerd Font Mono 14, márgenes y terminal rápida |
 | zsh | Conserva Oh My Zsh y tus rutas; sustituye el prompt anterior por Starship |
 | Autocompletado | Sugerencias en gris, historial local por carpeta con Atuin y Tab para npm/uv/uvx |
-| Starship | Preset Tokyo Night original: segmentos azules, iconos, Git, runtimes y reloj |
+| Starship | Distribución Tokyo Night con tonos oscuros y verde claro; iconos, Git, runtimes y reloj |
 | fzf | Búsqueda de historial, archivos y carpetas |
 | zoxide | Navegación con `z` y selección con `zi` |
 | Git | delta para diffs e identidad personal por carpeta |
