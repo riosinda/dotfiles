@@ -1,6 +1,6 @@
 # Mantener el shell de la Mac y los controles nativos de ventana.
 theme = Mellifluous
-font-family = Menlo
+font-family = JetBrainsMono Nerd Font Mono
 font-size = 14
 window-padding-x = 8
 window-padding-y = 8

@@ -28,7 +28,7 @@ o notebooks cuando los necesites. No tienes que aprender todo de una vez.
 | --- | --- | --- |
 | Ghostty | La aplicación que muestra tus terminales | Una ventana de macOS con texto y pestañas |
 | zsh | El programa que interpreta tus comandos | Ejecuta `cd`, `git` o `docker` |
-| Starship | La información que aparece antes de escribir | Proyecto, rama, Python y host remoto |
+| Starship | La información que aparece antes de escribir | Proyecto, rama Git, runtimes y reloj |
 | tmux | Organiza terminales en sesiones, ventanas y paneles | Un espacio por proyecto con logs y comandos |
 | Lazygit | Una interfaz de Git manejada con teclado | Revisar cambios, preparar commits y subirlos |
 | Docker | Ejecuta aplicaciones en contenedores | PostgreSQL, Redis o una API |
@@ -153,13 +153,13 @@ de una sesión y terminar sus procesos.
 
 ## Cómo leer y escribir comandos
 
-El prompt usa bloques oscuros: arriba aparecen el entorno detectado (Node,
-Python o Conda) y la carpeta; debajo, la rama Git en verde. El bloque de cambios
-solo aparece si hay algo que indicar: `mod:2` son dos archivos modificados,
-`+1` es un archivo preparado, `?1` uno sin seguimiento y `↑1` un commit por subir.
-La línea con `❯` es donde escribes. Si el comando anterior falló, cambia a rojo.
-Fuera de un repositorio no aparece la fila de Git. Los bloques usan la fuente
-Menlo existente y son rectangulares; no necesitan instalar fuentes adicionales.
+El prompt usa el [preset Tokyo Night original de Starship](https://starship.rs/presets/tokyo-night):
+segmentos azules unidos para carpeta, Git, runtimes compatibles y reloj.
+La línea con `❯` es donde escribes. El contenido puede ocupar más espacio cuando
+el panel es estrecho; no se fuerza una fila separada para Git. Los iconos usan
+JetBrainsMono Nerd Font Mono, que el instalador incluye para las próximas Macs.
+Se conserva el preset sin personalizaciones; Python y Conda no se muestran
+en este diseño original.
 
 ### Sugerencias mientras escribes
 
@@ -561,7 +561,8 @@ python -c "import sys; print(sys.executable)"
 ```
 
 Activarlo en un panel no lo activa en los demás. Si usas Conda, selecciona tu
-entorno con su comando habitual. El prompt de Starship ayuda a ver el entorno.
+entorno con su comando habitual. Para confirmar qué Python estás usando,
+ejecuta `which python`; el preset Tokyo Night original no muestra ese entorno.
 El kernel de VS Code se selecciona aparte.
 
 En un proyecto que contenga `train.py` y sus dependencias instaladas:

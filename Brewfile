@@ -1,5 +1,6 @@
 # Instalar lo que falta, sin actualizar todo Homebrew.
 cask "ghostty"
+cask "font-jetbrains-mono-nerd-font"
 brew "chezmoi"
 brew "starship"
 brew "fzf"
