@@ -4,6 +4,8 @@ Entorno de desarrollo para macOS, instalado en el disco interno. Ghostty y zsh
 con Starship, fzf, zoxide, ripgrep, fd, jq, Lazygit/delta y tmux. Los agentes
 siguen usando sus propias interfaces y configuraciones.
 
+**Empieza aquí:** [Guía práctica desde cero: paneles, Git, Docker, SSH y agentes](docs/guia-practica.md).
+
 ## Instalar en otra Mac
 
 Requisitos: Homebrew, Git y Python 3 (Command Line Tools o Homebrew).
