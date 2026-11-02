@@ -1,0 +1,6 @@
+# Integración simple de Lazygit + delta, como en el PR #3 de Milton.
+# No incluye generación de commits con IA ni clientes de API.
+git:
+  diffRenderers:
+    - colorArg: always
+      command: delta --dark --paging=never --line-numbers

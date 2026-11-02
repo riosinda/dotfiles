@@ -1,0 +1,21 @@
+# Mantener el shell de la Mac y los controles nativos de ventana.
+theme = Mellifluous
+font-family = Menlo
+font-size = 14
+window-padding-x = 8
+window-padding-y = 8
+window-padding-balance = true
+mouse-hide-while-typing = true
+shell-integration = detect
+window-save-state = always
+window-width = 120
+window-height = 36
+
+# Atajo dentro de Ghostty. No necesita permisos globales de accesibilidad.
+keybind = cmd+p=toggle_quick_terminal
+quick-terminal-position = center
+quick-terminal-size = 60%,60%
+quick-terminal-animation-duration = 0
+
+# Option izquierdo para atajos; derecho conserva caracteres del teclado español.
+macos-option-as-alt = left

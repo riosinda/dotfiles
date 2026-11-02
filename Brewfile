@@ -1,0 +1,13 @@
+# Instalar lo que falta, sin actualizar todo Homebrew.
+cask "ghostty"
+brew "chezmoi"
+brew "starship"
+brew "fzf"
+brew "zoxide"
+brew "ripgrep"
+brew "fd"
+brew "jq"
+brew "lazygit"
+brew "git-delta"
+brew "tmux"
+brew "gh"
