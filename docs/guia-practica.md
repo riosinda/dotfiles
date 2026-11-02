@@ -153,6 +153,14 @@ de una sesión y terminar sus procesos.
 
 ## Cómo leer y escribir comandos
 
+El prompt usa bloques oscuros: arriba aparecen el entorno detectado (Node,
+Python o Conda) y la carpeta; debajo, la rama Git en verde. El bloque de cambios
+solo aparece si hay algo que indicar: `mod:2` son dos archivos modificados,
+`+1` es un archivo preparado, `?1` uno sin seguimiento y `↑1` un commit por subir.
+La línea con `❯` es donde escribes. Si el comando anterior falló, cambia a rojo.
+Fuera de un repositorio no aparece la fila de Git. Los bloques usan la fuente
+Menlo existente y son rectangulares; no necesitan instalar fuentes adicionales.
+
 ### Sugerencias mientras escribes
 
 Abre una terminal nueva para cargar esta configuración. Si ya estás en un panel

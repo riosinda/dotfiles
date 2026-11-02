@@ -39,7 +39,7 @@ configuración. Si una opción de ventana no cambia, abre una ventana nueva.
 | Ghostty | Mellifluous, Menlo 14, márgenes, controles de macOS y terminal rápida |
 | zsh | Conserva Oh My Zsh y tus rutas; sustituye el prompt anterior por Starship |
 | Autocompletado | Sugerencias en gris, historial local por carpeta con Atuin y Tab para npm/uv/uvx |
-| Starship | Carpeta, rama/estado Git, Python/Conda, duración y host por SSH |
+| Starship | Bloques oscuros con verde: Node/Python/Conda y carpeta arriba; rama/estado Git debajo |
 | fzf | Búsqueda de historial, archivos y carpetas |
 | zoxide | Navegación con `z` y selección con `zi` |
 | Git | delta para diffs e identidad personal por carpeta |
